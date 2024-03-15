@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg01.jpg'); /* Replace 'background-image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            color: black;
+        }
+        .large-text {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        .small-text {
+            font-size: 36px;
+            margin-bottom: 20px;
+           margin-left: 185px;
+           margin-right: 185px;
+        }
+         .smaller-text {
+            font-size: 26px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 150px;
+            background-color: #739BD0;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #CD5C5C;
+        }
+        @media only screen and (max-width: 600px) {
+            .mobile-button {
+                display: block;
+                padding: 10px 20px;
+                background-color: #CD5C5C;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="large-text">We Have Rebranded</div>
+        <div class="small-text">Dorset House Clearance has now become
+       <u>Baz's Clearances</u></div>
+        <div class="small-text">However we are still available on 077 26 76 4321 should you need to contact us; alternatively, if you are on a mobile, click the mobile link below</div>
+        <a href="tel:+447726764321" class="mobile-button">Call Us</a>
+        <div class="smaller-text">To go straight to our new domain, click the blue button</div>
+        <a href="https://bazclearance.co.uk" class="button">Baz's Clearances</a>
+        <br>
+        
+    </div>
+</body>
+</html>
+
