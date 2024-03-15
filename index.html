@@ -15,48 +15,56 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
             text-align: center;
             color: black;
+            padding: 20px;
         }
         .large-text {
-            font-size: 64px;
+            font-size: 5vw; /* Responsive font size */
             margin-bottom: 20px;
         }
         .small-text {
-            font-size: 36px;
+            font-size: 3vw; /* Responsive font size */
             margin-bottom: 20px;
-           margin-left: 185px;
-           margin-right: 185px;
         }
-         .smaller-text {
-            font-size: 26px;
+        .smaller-text {
+            font-size: 2vw; /* Responsive font size */
             margin-bottom: 20px;
-            margin-top: 20px;
+        }
+        .button, .mobile-button {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 3vw; /* Responsive font size */
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
         .button {
-            display: inline-block;
-            padding: 10px 150px;
             background-color: #739BD0;
             color: white;
-            font-size: 30px;
-            text-decoration: none;
             transition: background-color 0.3s;
-            border-radius: 5px;
         }
         .button:hover {
             background-color: #CD5C5C;
         }
+        .mobile-button {
+            background-color: #CD5C5C;
+            color: white;
+            margin-top: 10px;
+        }
         @media only screen and (max-width: 600px) {
-            .mobile-button {
-                display: block;
+            .large-text {
+                font-size: 8vw; /* Larger font size for smaller screens */
+            }
+            .small-text, .smaller-text {
+                font-size: 5vw; /* Larger font size for smaller screens */
+            }
+            .button, .mobile-button {
                 padding: 10px 20px;
-                background-color: #CD5C5C;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
+                font-size: 4vw; /* Larger font size for smaller screens */
             }
         }
     </style>
@@ -66,12 +74,10 @@
         <div class="large-text">We Have Rebranded</div>
         <div class="small-text">Dorset House Clearance has now become
        <u>Baz's Clearances</u></div>
-        <div class="small-text">However we are still available on 077 26 76 4321 should you need to contact us; alternatively, if you are on a mobile, click the mobile link below</div>
+        <div class="small-text">However, we are still available on <a href="tel:+447726764321">077 26 76 4321</a> should you need to contact us; alternatively, if you are on a mobile, click the mobile link below</div>
         <a href="tel:+447726764321" class="mobile-button">Call Us</a>
         <div class="smaller-text">To go straight to our new domain, click the blue button</div>
         <a href="https://bazclearance.co.uk" class="button">Baz's Clearances</a>
-        <br>
-        
     </div>
 </body>
 </html>
