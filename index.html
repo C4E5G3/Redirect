@@ -21,6 +21,8 @@
             text-align: center;
             color: black;
             padding: 20px;
+            max-width: 80%; /* Added to limit width on larger screens */
+            margin: 0 auto; /* Center align on larger screens */
         }
         .large-text {
             font-size: 5vw; /* Responsive font size */
@@ -29,19 +31,22 @@
         .small-text {
             font-size: 3vw; /* Responsive font size */
             margin-bottom: 20px;
+            margin-left: auto; /* Align left on larger screens */
+            margin-right: auto; /* Align right on larger screens */
+            max-width: 80%; /* Limit width on larger screens */
         }
         .smaller-text {
-            margin-top: 15px;
             font-size: 2vw; /* Responsive font size */
             margin-bottom: 20px;
         }
         .button, .mobile-button {
             display: inline-block;
-            padding: 10px 80px;
+            padding: 10px 30px;
             font-size: 3vw; /* Responsive font size */
             text-decoration: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-bottom: 10px; /* Added margin bottom */
         }
         .button {
             background-color: #739BD0;
@@ -54,7 +59,6 @@
         .mobile-button {
             background-color: #CD5C5C;
             color: white;
-            margin-top: 10px;
         }
         @media only screen and (max-width: 600px) {
             .large-text {
@@ -66,7 +70,6 @@
             .button, .mobile-button {
                 padding: 10px 20px;
                 font-size: 4vw; /* Larger font size for smaller screens */
-                margin-bottom: 20px; 
             }
         }
     </style>
@@ -83,4 +86,3 @@
     </div>
 </body>
 </html>
-
