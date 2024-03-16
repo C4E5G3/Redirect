@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9"> <!-- Adjusted initial-scale -->
-    <title>Redirect Page</title>
-    <style>
+        <title>Redirect Page for Dorset House Clearance</title>
+       <meta name="description" content="Baz's Clearances - Your trusted partner for Dorset house clearance services. 
+    Formerly known as Dorset House Clearance, we have rebranded to serve you better. Call us at 077 26 76 4321 
+    or visit our website at bazclearance.co.uk.">
+ <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Baz's Clearances",
+      "url": "https://bazclearance.co.uk",
+      "telephone": "+447726764321",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "92 Church Rd",
+        "addressLocality": "Ferndown",
+        "addressRegion": "Dorset",
+        "postalCode": "BH22 9EX",
+        "addressCountry": "United Kingdom"
+      },
+        "openingHours": [
+                "Mo-Fr 07:30-20:00",
+                "Sa 07:30-18:00",
+                "Su 11:00-17:00"
+      ],
+      "image": "/baz-clearances-logo.png"
+}
+    </script>
+      <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('bg01.jpg'); 
+            background-image: url('dorset-house-clearance-bg.jpg'); 
             background-size: cover;
             background-position: center;
             display: flex;
@@ -24,18 +51,18 @@
             max-width: 70%; /* Adjusted max-width */
             margin: 0 auto;
         }
-        .large-text {
+        h1 {
             font-size: 4.5vw; /* Adjusted font size */
             margin-bottom: 10px; /* Adjusted margin */
         }
-        .small-text {
+        h2 {
             font-size: 2.7vw; /* Adjusted font size */
             margin-bottom: 10px; /* Adjusted margin */
+            max-width: 80%;
             margin-left: auto;
             margin-right: auto;
-            max-width: 80%;
         }
-        .smaller-text {
+        p {
             font-size: 1.8vw; /* Adjusted font size */
             margin-bottom: 10px; /* Adjusted margin */
         }
@@ -61,10 +88,10 @@
             color: white;
         }
         @media only screen and (max-width: 600px) {
-            .large-text {
+            h1 {
                 font-size: 7vw; /* Adjusted font size for smaller screens */
             }
-            .small-text, .smaller-text {
+            h2, p {
                 font-size: 4.5vw; /* Adjusted font size for smaller screens */
             }
             .button, .mobile-button {
@@ -76,12 +103,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="large-text">We Have Rebranded</div>
-        <div class="small-text">Dorset House Clearance has now become
-       <u>Baz's Clearances</u></div>
-        <div class="small-text">However, we are still available on 077 26 76 4321 should you need to contact us; alternatively, if you are on a mobile, click the mobile link below</div>
+        <h1>We Have Rebranded</h1>
+        <h2>Dorset House Clearance has now become <u>Baz's Clearances</u></h2>
+        <p>However, we are still available on 077 26 76 4321 should you need to contact us; alternatively, if you are on a mobile, click the mobile link below</p>
         <a href="tel:+447726764321" class="mobile-button">Call Us</a>
-        <div class="smaller-text">To go straight to our new domain, click the blue button</div>
+        <p>To go straight to our new domain, click the blue button</p>
         <a href="https://bazclearance.co.uk" class="button">Baz's Clearances</a>
     </div>
 </body>
